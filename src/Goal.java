@@ -1,20 +1,16 @@
 //  Description: An item that represents the end goal of the maze. The player wins if he or
 //               she reaches the square in which this item is contained.
-package budiman.matt.maze.items;
 
 import java.awt.Color;
 import java.awt.Graphics;
 
-import budiman.matt.maze.traversers.MazeTraverser;
-import budiman.matt.maze.traversers.Player;
-
 public class Goal extends Item {
 
 	public static final int DEFAULT_DIAMETER = 50 * 3;
-	
+
 	private int innerDiameter;
 	private int outerDiameter;
-	
+
 	/**
 	 * Constructs a new goal
 	 * @param row the row of the square in which the goal is located
@@ -27,14 +23,14 @@ public class Goal extends Item {
 		innerDiameter = DEFAULT_DIAMETER;
 		outerDiameter = DEFAULT_DIAMETER + 50;
 	}
-	
+
 	/**
 	 * Makes the player win.
 	 */
 	public void interactWith(Player p) {
 		p.win();
 	}
-	
+
 	/**
 	 * Draws the goal as a green ring.
 	 */

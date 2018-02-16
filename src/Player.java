@@ -1,12 +1,11 @@
 //  Description: The Player class represents the player that traversers throughout the maze.
-package budiman.matt.maze.traversers;
 import java.awt.Color;
 
 public class Player extends MazeTraverser {
-	
+
 	public static final int DEFAULT_LIVES = 3;
 	public static final int DEFAULT_ENERGY = 5;
-	
+
 	private int lives; // Total number of lives the player has.
 	private int energy; // Total energy the player has
 	private boolean flashlightOn; // True if the light is on, off otherwise
@@ -27,7 +26,7 @@ public class Player extends MazeTraverser {
 		flashlightOn = false;
 		hasWon = false;
 	}
-	
+
 	/**
 	 * Sets light on or off
 	 * @param on true to set the light on, false otherwise
@@ -35,7 +34,7 @@ public class Player extends MazeTraverser {
 	public void setLight(boolean on) {
 		flashlightOn = on;
 	}
-	
+
 	/**
 	 * Sets the total lives of the player to a specified value
 	 * @param value the new value to replace the current total lives
@@ -43,7 +42,7 @@ public class Player extends MazeTraverser {
 	public void setLives(int value) {
 		lives = value;
 	}
-	
+
 	/**
 	 * Gets the total lives of the player
 	 * @return the total lives
@@ -51,7 +50,7 @@ public class Player extends MazeTraverser {
 	public int getLives() {
 		return lives;
 	}
-	
+
 	/**
 	 * Sets the total energy of the player to a specified value
 	 * @param value the new value to replace the current total energy
@@ -59,7 +58,7 @@ public class Player extends MazeTraverser {
 	public void setEnergy(int value) {
 		energy = value;
 	}
-	
+
 	/**
 	 * Gets the total energy of the player.
 	 * @return the total energy
@@ -67,7 +66,7 @@ public class Player extends MazeTraverser {
 	public int getEnergy() {
 		return energy;
 	}
-	
+
 	/**
 	 * Gets whether whether the light is on or not.
 	 * @return true if the light is on, false otherwise
@@ -75,14 +74,14 @@ public class Player extends MazeTraverser {
 	public boolean lightIsOn() {
 		return flashlightOn;
 	}
-	
+
 	/**
 	 * Makes the player win.
 	 */
 	public void win() {
 		hasWon = true;
 	}
-	
+
 	/**
 	 * Gets whether the player has won or not.
 	 * @return true if the player has won, false otherwise.

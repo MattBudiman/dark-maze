@@ -1,5 +1,4 @@
 //  Description: The JPanel in which the actual maze will be displayed.
-package budiman.matt.maze.gui.panels;
 
 import java.awt.Color;
 import java.awt.Graphics;
@@ -8,10 +7,6 @@ import javax.swing.JPanel;
 import javax.swing.Timer;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
-
-import budiman.matt.maze.gui.frames.GameFrame;
-import budiman.matt.maze.levels.Maze;
-import budiman.matt.maze.traversers.Player;
 
 public class GamePanel extends JPanel {
 	private static final long serialVersionUID = 1L;
@@ -37,7 +32,7 @@ public class GamePanel extends JPanel {
 		p = maze.getPlayer();
 		this.frame = frame;
 	}
-	
+
 	/**
 	 * Returns a reference to the player in the maze
 	 * @return a reference to the player in the maze
@@ -45,7 +40,7 @@ public class GamePanel extends JPanel {
 	public Player getPlayer() {
 		return p;
 	}
-	
+
 	/**
 	 * Paints the GamePanel
 	 */

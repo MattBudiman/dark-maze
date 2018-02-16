@@ -1,16 +1,13 @@
 //  Description: A class that represents an item with which the player can interact.
-package budiman.matt.maze.items;
 
 import java.awt.Color;
 import java.awt.Graphics;
 
-import budiman.matt.maze.traversers.*;
-
 public abstract class Item {
-	
+
 	protected int row, col, x, y;
 	protected Color color;
-	
+
 	/**
 	 * Defines how subclasses of Item are constructed.
 	 * @param row the row of the square in which the item is located
@@ -26,10 +23,10 @@ public abstract class Item {
 		this.y = y;
 		this.color = color;
 	}
-	
+
 	// Causes the item to interact with the player in some way.
 	public abstract void interactWith(Player p);
-	
+
 	//Draws the item on the maze.
 	public abstract void draw(Graphics g);
 }

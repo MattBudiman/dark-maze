@@ -1,12 +1,7 @@
 //  Description: A class that represents the actual maze and its contents.
-package budiman.matt.maze.levels;
 import java.awt.Color;
 import java.awt.Graphics;
 import java.util.ArrayList;
-
-import budiman.matt.maze.traversers.*;
-import budiman.matt.maze.gui.frames.GameFrame;
-import budiman.matt.maze.items.*;
 
 public class Maze {
 

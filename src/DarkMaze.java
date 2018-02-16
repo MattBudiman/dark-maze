@@ -1,17 +1,14 @@
 //  Description: The Driver Class for the game.
-package budiman.matt.maze.driver;
 import java.awt.Color;
-
-import budiman.matt.maze.gui.frames.GameFrame;
 
 public class DarkMaze {
 
 	public static void main(String[] args) {
-		
+
 		//String blueprints for the level
 		String[][] traversers = new String[5][5];
 		String[][] items = new String[5][5];
-		
+
 		//Setting up the level;
 		traversers[1][0] = "P";
 		items[0][1] = "H";
@@ -21,7 +18,7 @@ public class DarkMaze {
 		items[3][0] = "B";
 		items[0][2] = "L";
 		items[3][3] = "G";
-		
+
 		// Making a new game
 		GameFrame game = new GameFrame(traversers, items, Color.WHITE);
 		game.setVisible(true);
